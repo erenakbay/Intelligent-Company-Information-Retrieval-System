@@ -1,0 +1,17 @@
+requests
+docker
+pytest
+redis
+fastapi
+uvicorn
+langchain
+langchain_openai
+langgraph
+langsmith
+langchain_community
+wikipedia-api
+openai
+pydantic
+python-dotenv
+loguru
+wikipedia
