@@ -28,7 +28,7 @@ class AmbiguousResponse(BaseModel):
 
 @app.get("/query/")
 def process_query(user_query: str = Query(..., description="The user's query (e.g., 'Where is OpenAI headquartered?')")):
-    """API endpoint to handle user queries with Redis caching & ambiguity handling."""
+    """API endpoint to handle user queries."""
     cache_key = f"query_result:{user_query.lower()}"
     
     cached_response = redis_client.get(cache_key) if redis_client else None
